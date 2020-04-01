@@ -1,39 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Project tracking intro component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    h1,
+    h6 {
+      text-transform: uppercase;
+    }
+
+    .content {
+      display: grid;
+      grid-template-columns: 600px auto;
+      height: 100vh;
+      width: 1000px;
+    }
+
+    .logo {
+      margin-left: 50px; 
+      margin-top: 20px;
+    }
+
+    .navbar {
+      justify-content: space-evenly;
+      margin-top: -5px;
+      margin-bottom: -250px;
+      border-radius: 0% 15%;
+      background-color: hsl(207, 33%, 95%);
+    }
+
+    .navbar > h5 {
+      color: hsl(230, 29%, 20%);
+      word-spacing: 5em;
+      margin-left: 300px;
+    }
+
+    .info {
+      margin-top: 120px;
+      margin-left: 50px;
+    }
+
+    .info > h1 {
+      font-size: 50px;
+    }
+
+    .tech {
+      margin-top: 40px;
+      margin-left: 50px;
+    }
+
+    .demo {
+      padding-left: 20px;
+      padding-right: 20px;
+      height: 40px;
+      background-color: hsl(0, 100%, 68%);
+      border-radius: 15px;
+      border-color: hsl(0, 100%, 68%);
+      color: white;
+      font-size: 15px;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 110px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
   </style>
 </head>
+
 <body>
-  Product
-  Features
-  Pricing
-  Login
+  <div class="content">
+    <header>
+      <img src="./images/logo.svg" class="logo">
+    </header>
+    <div class="navbar">
+      <h5>Product
+      Features
+      Pricing
+      Login</h5>
+    </div>
+    <div class="info">
+      New
+      Monograph Dashboard
 
-  New
-  Monograph Dashboard
+      <h1>Powerful insights into your team</h1>
+      <p>Project planning and time tracking for agile teams</p>
 
-  Powerful insights into your team
-  Project planning and time tracking for agile teams
+      <button class="demo">Schedule a demo</button>
+      to see a live preview
+    </div>
 
-  Schedule a demo
-  to see a live preview
-  
+    <div>
+      <img src="images/illustration-devices.svg" class="tech">
+    </div>
+
+  </div>
+
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded & customized by <a href="https://maryamtb.herokuapp.com">MTB</a>.
     </p>
   </footer>
+
+
 </body>
+
 </html>
